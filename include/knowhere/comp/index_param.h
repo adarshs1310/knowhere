@@ -95,6 +95,7 @@ constexpr const char* JSON_ID_SET = "json_id_set";
 constexpr const char* TRACE_ID = "trace_id";
 constexpr const char* SPAN_ID = "span_id";
 constexpr const char* TRACE_FLAGS = "trace_flags";
+constexpr const char* SCALAR_INFO = "scalar_info";
 constexpr const char* MATERIALIZED_VIEW_SEARCH_INFO = "materialized_view_search_info";
 constexpr const char* MATERIALIZED_VIEW_OPT_FIELDS_PATH = "opt_fields_path";
 constexpr const char* MAX_EMPTY_RESULT_BUCKETS = "max_empty_result_buckets";
@@ -102,7 +103,7 @@ constexpr const char* BM25_K1 = "bm25_k1";
 constexpr const char* BM25_B = "bm25_b";
 // average document length
 constexpr const char* BM25_AVGDL = "bm25_avgdl";
-constexpr const char* WAND_BM25_MAX_SCORE_RATIO = "wand_bm25_max_score_ratio";
+constexpr const char* DIM_MAX_SCORE_RATIO = "dim_max_score_ratio";
 };  // namespace meta
 
 namespace indexparam {
@@ -173,7 +174,8 @@ constexpr const char* HNSW_REFINE_TYPE = "refine_type";
 constexpr const char* SQ_TYPE = "sq_type";  // for IVF_SQ and HNSW_SQ
 constexpr const char* PRQ_NUM = "nrq";      // for PRQ, number of redisual quantizers
 
-// Sparse Params
+// Sparse Inverted Index Params
+constexpr const char* INVERTED_INDEX_ALGO = "inverted_index_algo";
 constexpr const char* DROP_RATIO_BUILD = "drop_ratio_build";
 constexpr const char* DROP_RATIO_SEARCH = "drop_ratio_search";
 }  // namespace indexparam
